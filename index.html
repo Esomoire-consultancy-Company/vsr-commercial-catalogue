@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Virtual Silk Road: public-preview catalogue of commercial capability families and client licence architecture. Subject to product-specific qualification.">
+<meta name="robots" content="noindex, nofollow">
+<title>Virtual Silk Road | Commercial Portfolio — Public Preview</title>
+<style>
+:root{--navy:#152536;--muted:#617181;--teal:#087c78;--paper:#f8f8f5;--line:#d9e0e0;--cream:#ecefea;--gold:#c89862}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#dfe6e7;color:var(--navy);font-family:Inter,'Segoe UI',system-ui,Arial,sans-serif;line-height:1.4}
+button,input{font:inherit}a{color:inherit}.topbar{position:sticky;z-index:10;top:0;background:rgba(21,37,54,.97);color:#f3f5f7;border-bottom:1px solid #566778;box-shadow:0 9px 25px #0001}
+.top-inner{max-width:1550px;margin:auto;display:flex;gap:22px;align-items:center;justify-content:space-between;padding:14px 25px}
+.brand{font-weight:800;letter-spacing:.12em;text-decoration:none;font-size:14px}.brand .diamond{color:#6ad2c7;padding-right:8px}
+.links{display:flex;gap:20px;align-items:center;flex-wrap:wrap}.links a{text-decoration:none;font-size:12px;color:#c8d4de}.links a:hover{color:#fff}.links button,.print-btn{border:1px solid #74999f;background:transparent;color:#e7f1f2;padding:8px 14px;border-radius:3px;cursor:pointer}.links button:hover{background:#365763}
+.sheet{width:min(1540px,calc(100% - 48px));margin:30px auto;background:var(--paper);box-shadow:0 15px 60px #132a3740;min-height:950px;padding:53px 57px;overflow:hidden;position:relative}
+.kicker{display:flex;align-items:center;gap:12px;font-size:11px;font-weight:850;letter-spacing:.19em;color:var(--teal)}.kicker:before{content:'';width:22px;height:3px;background:var(--teal)}
+.hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(275px,.55fr);gap:40px;margin-top:18px;padding-bottom:30px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(44px,4.5vw,77px);letter-spacing:-.055em;font-weight:750;line-height:1.03;margin:10px 0 16px;max-width:900px}h1 em{color:var(--teal);font-style:normal}.intro{font-size:15px;max-width:780px;color:#495a68;margin:0}
+.hero-right{border-left:2px solid var(--gold);padding:12px 0 10px 24px;align-self:center}.hero-right b{font-size:12px;letter-spacing:.1em;display:block;margin-bottom:8px}.hero-right p{font-size:13px;line-height:1.5;color:#576575;margin:0 0 12px}.hero-right .status{display:inline-block;border:1px solid #a6baad;color:#426955;background:#e8f0e8;padding:6px 10px;font-size:10px;font-weight:800;letter-spacing:.07em}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 24px}.metric{background:#e9efed;border:1px solid #d1dad7;padding:16px 20px;min-height:103px}.metric .val{font-size:42px;line-height:1;font-weight:800;letter-spacing:-.03em}.metric small{font-size:10px;color:#586a71;display:block;margin-top:7px;letter-spacing:.08em;text-transform:uppercase}
+.sec-top{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin:14px 0}.sec-top h2{font-size:22px;margin:0;letter-spacing:-.02em}.sec-top .aside{color:#667781;font-size:12px;max-width:530px;text-align:right}
+.tools{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:12px 0 16px}.tools label{display:flex;align-items:center;gap:6px;background:white;border:1px solid #cdd9db;padding:8px 10px;min-width:250px}.tools input{border:0;background:transparent;outline:0;min-width:0;width:100%;font-size:12px}.filter{background:#e7edeb;border:1px solid transparent;padding:8px 11px;font-size:10px;cursor:pointer;color:#51616b;border-radius:2px}.filter.active{background:#174e52;color:#fff}.filter:hover{border-color:#8ba7ac}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.portfolio{position:relative;background:#fff;border:1px solid var(--line);border-top:4px solid var(--stripe);min-height:137px;padding:11px 13px 13px;display:flex;flex-direction:column}.portfolio-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px}.portfolio .code{color:#687583;font-size:11px;font-weight:850}.small-type{font-size:8px;letter-spacing:.065em;color:#7a8592;text-align:right}.portfolio h3{font-size:14px;line-height:1.23;letter-spacing:-.014em;margin:0 0 6px}.portfolio p{color:#60717d;font-size:10px;margin:0 0 8px}.portfolio .tiny{font-size:8px;color:#808d94;margin-top:auto}.portfolio.hidden{display:none}
+.footer{margin-top:25px;border-top:1px solid var(--line);padding-top:13px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#708087;font-size:10px}.footer strong{color:#415866}
+.second-title{margin:20px 0 8px;font-size:49px;line-height:1.08;letter-spacing:-.05em}.second-lede{font-size:15px;color:#566777;max-width:1000px;margin-bottom:35px}
+.arch{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:30px}.tech{background:#e7eceb;border:1px solid #cad7d4;border-bottom:4px solid #107976;padding:19px 17px;min-height:115px}.tech h3{font-size:17px;margin:0 0 7px}.tech p{font-size:11px;margin:0;color:#566972}.arrowstrip{text-align:center;color:var(--teal);font-size:15px;letter-spacing:.1em;margin:0 0 12px}
+.two-col{display:grid;grid-template-columns:1.2fr .8fr;gap:30px}.box{background:#fff;border:1px solid var(--line);padding:24px}.box h2{font-size:24px;margin:0 0 17px;letter-spacing:-.03em}.phase-list{display:grid;grid-template-columns:1fr;gap:8px}.phase{display:flex;gap:12px;padding:7px 0;border-bottom:1px solid #edf0ee}.phase b{display:inline-flex;align-items:center;justify-content:center;width:27px;height:27px;background:#e1efea;color:#08766a;font-size:11px;flex-shrink:0}.phase h3{margin:0 0 2px;font-size:13px}.phase p{margin:0;font-size:10px;color:#61727d}
+.small-box{padding:20px;background:#e8efed;border:1px solid #d1ddd7;margin-bottom:15px}.small-box h3{margin:0 0 10px;font-size:17px}.small-box p{color:#5a6e77;font-size:12px}.small-box ul{padding-left:18px;font-size:12px;color:#526775;line-height:1.8}.badge{display:inline-block;background:#d9eae5;color:#246f67;border:1px solid #96beb6;font-size:10px;font-weight:700;letter-spacing:.03em;padding:5px 9px}
+.warning{border-left:4px solid #b8925d;background:#f6f0e7;padding:17px 19px}.warning h3{margin:0 0 7px;font-size:15px}.warning p{margin:0;font-size:11px;color:#695c4e;line-height:1.65}.layer{background:#132c40;color:white;padding:14px 18px;font-size:13px;font-weight:800;margin:8px 0}.layer-sub{font-size:11px;color:#b8d4dd;font-weight:400}.printnote{font-size:11px;color:#7b898b}
+@media(max-width:1000px){.sheet{padding:26px;width:calc(100% - 22px)}.hero{grid-template-columns:1fr}.hero-right{max-width:none}.cards{grid-template-columns:repeat(2,1fr)}.arch{grid-template-columns:repeat(3,1fr)}.two-col{grid-template-columns:1fr}.top-inner{flex-wrap:wrap}}
+@media(max-width:590px){.topbar .links a{display:none}.sheet{margin:11px auto;padding:19px;min-height:0}.hero{margin-top:10px}.cards{grid-template-columns:1fr}.arch{grid-template-columns:1fr 1fr}.metric{padding:12px 10px;min-height:82px}.metric .val{font-size:28px}h1{font-size:41px}.second-title{font-size:37px}.sec-top{display:block}.sec-top .aside{text-align:left}.filter{font-size:10px}.tools label{min-width:100%;}.footer{display:block}}
+@media print{
+ @page{size:A1 landscape;margin:10mm}
+ html,body{background:#fff!important;margin:0!important;padding:0!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .topbar,.tools{display:none!important}
+ .sheet{box-shadow:none!important;border:0;width:100%!important;min-height:0!important;height:calc(594mm - 20mm);padding:10mm 12mm!important;margin:0!important;break-after:page;page-break-after:always;overflow:hidden!important}
+ .sheet:last-child{break-after:auto;page-break-after:auto}
+ .cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:3mm}
+ .portfolio{display:flex!important;min-height:33mm;padding:2.5mm 3mm}
+ .portfolio h3{font-size:15pt}.portfolio p{font-size:10pt}.portfolio .tiny,.small-type{font-size:8.3pt}
+ .kicker{font-size:12pt}.intro{font-size:15pt}.hero{gap:15mm;margin-top:4mm;padding-bottom:7mm}h1{font-size:58pt}
+ .metrics{margin:4mm 0}.metric{min-height:24mm}.metric .val{font-size:40pt}.metric small{font-size:10pt}
+ .sec-top h2{font-size:23pt}.sec-top .aside{font-size:12pt}
+ .footer{font-size:10pt;margin-top:5mm}
+ .second-title{font-size:48pt}.second-lede{font-size:16pt}.arch{gap:4mm}.tech{min-height:30mm}.tech h3{font-size:16pt}.tech p{font-size:11pt}
+ .box h2{font-size:22pt}.phase h3{font-size:13pt}.phase p{font-size:11pt}.phase b{font-size:11pt}
+ .small-box h3{font-size:16pt}.small-box ul,.small-box p{font-size:12pt}.warning h3{font-size:16pt}.warning p{font-size:11pt}
+ }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="top-inner"><a class="brand" href="#home"><span class="diamond">◇</span> VIRTUAL SILK ROAD</a><nav class="links" aria-label="Site navigation"><a href="#catalogue">Portfolio</a><a href="#licensing">Client licensing</a><a href="#integrations">Integration model</a><button type="button" onclick="window.print()">Print A1</button></nav></div></header>
+<main>
+<section class="sheet" id="home" aria-label="A1 page one: public commercial portfolio">
+ <div class="kicker">A PUBLIC CATALOGUE PROPOSAL · VERSION 0.1 · 08 OCT 2026</div>
+ <div class="hero"><div><h1>One platform.<br><em>Many capabilities.</em><br>Governed by design.</h1><p class="intro">Explore the Virtual Silk Road commercial portfolio—an integrated approach to identity, estates, orchestration, evidence, infrastructure and sector solutions. Product-specific commercial rights and production readiness are independently qualified.</p></div><div class="hero-right"><b>COMMERCIAL RELEASE POSITION</b><p>This is a non-binding overview of portfolio and service concepts, not a published price list, executable licence, implementation commitment or statement that all products are released.</p><span class="status">PUBLIC PREVIEW · NO ACTIVATION</span></div></div>
+ <div class="metrics"><div class="metric"><div class="val">23</div><small>Portfolio classification headings</small></div><div class="metric"><div class="val">296</div><small>Internal classified topics · not SKUs</small></div><div class="metric"><div class="val">06</div><small>Portfolio families</small></div></div>
+ <div class="sec-top" id="catalogue"><h2>Capability and programme portfolio</h2><div class="aside">Find what could be assembled into contracted client solutions. All product descriptions are proposed and subject to release qualification.</div></div>
+ <div class="tools" aria-label="Filter portfolio"><label>⌕ <input type="search" id="search" placeholder="Search capability or portfolio ID" autocomplete="off" aria-label="Search portfolio"></label><button class="filter active" data-filter="all" aria-pressed="true">All families</button><button class="filter" data-filter="Institutional Commons" aria-pressed="false">Institutional Commons</button><button class="filter" data-filter="Core Technology" aria-pressed="false">Core Technology</button><button class="filter" data-filter="Market &amp; Media" aria-pressed="false">Market &amp; Media</button><button class="filter" data-filter="Infrastructure &amp; AI" aria-pressed="false">Infrastructure &amp; Ai</button><button class="filter" data-filter="Sector Programmes" aria-pressed="false">Sector Programmes</button><button class="filter" data-filter="Delivery &amp; Recruitment" aria-pressed="false">Delivery &amp; Partnerships</button></div>
+ <div class="cards" id="cards"><article class="portfolio" data-family="Institutional Commons" data-terms="believers common / commonwealth community organization, participation and institutional programmes. institutional commons p01" style="--stripe:#c99d78">
+ <div class="portfolio-head"><span class="code">P01</span><span class="small-type">INSTITUTIONAL COMMONS</span></div>
+ <h3>Believers Common / Commonwealth</h3><p>Community organization, participation and institutional programmes.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Institutional Commons" data-terms="bnr / bni regional networks federated regional collaboration and governed participation frameworks. institutional commons p02" style="--stripe:#c99d78">
+ <div class="portfolio-head"><span class="code">P02</span><span class="small-type">INSTITUTIONAL COMMONS</span></div>
+ <h3>BNR / BNI Regional Networks</h3><p>Federated regional collaboration and governed participation frameworks.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Institutional Commons" data-terms="erules / constitutional publication governance publications, deliberation and revision history. institutional commons p03" style="--stripe:#c99d78">
+ <div class="portfolio-head"><span class="code">P03</span><span class="small-type">INSTITUTIONAL COMMONS</span></div>
+ <h3>eRules / Constitutional Publication</h3><p>Governance publications, deliberation and revision history.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Core Technology" data-terms="virtual silk road (vsr) a shared entry point to governed virtual estates and applications. core technology p04" style="--stripe:#67b7ae">
+ <div class="portfolio-head"><span class="code">P04</span><span class="small-type">CORE TECHNOLOGY</span></div>
+ <h3>Virtual Silk Road (VSR)</h3><p>A shared entry point to governed virtual estates and applications.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Core Technology" data-terms="genesis registry / estates estate, device and capability registration services. core technology p05" style="--stripe:#67b7ae">
+ <div class="portfolio-head"><span class="code">P05</span><span class="small-type">CORE TECHNOLOGY</span></div>
+ <h3>Genesis Registry / Estates</h3><p>Estate, device and capability registration services.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Core Technology" data-terms="digitalme identity-linked access to approved digital services. core technology p06" style="--stripe:#67b7ae">
+ <div class="portfolio-head"><span class="code">P06</span><span class="small-type">CORE TECHNOLOGY</span></div>
+ <h3>DigitalMe</h3><p>Identity-linked access to approved digital services.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Core Technology" data-terms="warden / sentinel / cerebral policy-led authorization, assurance and execution oversight. core technology p07" style="--stripe:#67b7ae">
+ <div class="portfolio-head"><span class="code">P07</span><span class="small-type">CORE TECHNOLOGY</span></div>
+ <h3>Warden / Sentinel / Cerebral</h3><p>Policy-led authorization, assurance and execution oversight.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Core Technology" data-terms="riveros / evidence / observability traceable evidence, provenance and service observability. core technology p08" style="--stripe:#67b7ae">
+ <div class="portfolio-head"><span class="code">P08</span><span class="small-type">CORE TECHNOLOGY</span></div>
+ <h3>RiverOS / Evidence / Observability</h3><p>Traceable evidence, provenance and service observability.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Core Technology" data-terms="synnergyze workflow composition and authorized orchestration. core technology p09" style="--stripe:#67b7ae">
+ <div class="portfolio-head"><span class="code">P09</span><span class="small-type">CORE TECHNOLOGY</span></div>
+ <h3>Synnergyze</h3><p>Workflow composition and authorized orchestration.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Core Technology" data-terms="ark network / collaboration cross-organization collaboration under explicit agreements. core technology p10" style="--stripe:#67b7ae">
+ <div class="portfolio-head"><span class="code">P10</span><span class="small-type">CORE TECHNOLOGY</span></div>
+ <h3>ARK Network / Collaboration</h3><p>Cross-organization collaboration under explicit agreements.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Market &amp; Media" data-terms="open quantum market discovery, listings and governed commercial interactions. market &amp; media p11" style="--stripe:#9bb6ed">
+ <div class="portfolio-head"><span class="code">P11</span><span class="small-type">MARKET &amp; MEDIA</span></div>
+ <h3>Open Quantum Market</h3><p>Discovery, listings and governed commercial interactions.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Market &amp; Media" data-terms="silk / treasury / commercial economics commercial accounting, treasury controls and benefit records. market &amp; media p12" style="--stripe:#9bb6ed">
+ <div class="portfolio-head"><span class="code">P12</span><span class="small-type">MARKET &amp; MEDIA</span></div>
+ <h3>SILK / Treasury / Commercial Economics</h3><p>Commercial accounting, treasury controls and benefit records.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Market &amp; Media" data-terms="presstech / wardenfm / wardentv media creation, publication and distribution capabilities. market &amp; media p13" style="--stripe:#9bb6ed">
+ <div class="portfolio-head"><span class="code">P13</span><span class="small-type">MARKET &amp; MEDIA</span></div>
+ <h3>PressTech / WardenFM / WardenTV</h3><p>Media creation, publication and distribution capabilities.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Market &amp; Media" data-terms="creators common / studio / experiences creative workspaces, content and digital experiences. market &amp; media p14" style="--stripe:#9bb6ed">
+ <div class="portfolio-head"><span class="code">P14</span><span class="small-type">MARKET &amp; MEDIA</span></div>
+ <h3>Creators Common / Studio / Experiences</h3><p>Creative workspaces, content and digital experiences.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Infrastructure &amp; AI" data-terms="alpha nodes / server / open development infrastructure, developer tooling and estate hosting patterns. infrastructure &amp; ai p15" style="--stripe:#d9bc72">
+ <div class="portfolio-head"><span class="code">P15</span><span class="small-type">INFRASTRUCTURE &amp; AI</span></div>
+ <h3>Alpha Nodes / Server / Open Development</h3><p>Infrastructure, developer tooling and estate hosting patterns.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Infrastructure &amp; AI" data-terms="provider fabric / ai / telecom / cloud connectors for ai, cloud, telecom and external providers. infrastructure &amp; ai p16" style="--stripe:#d9bc72">
+ <div class="portfolio-head"><span class="code">P16</span><span class="small-type">INFRASTRUCTURE &amp; AI</span></div>
+ <h3>Provider Fabric / AI / Telecom / Cloud</h3><p>Connectors for AI, cloud, telecom and external providers.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Infrastructure &amp; AI" data-terms="genesis devices / power / physical edge connected edge devices and physical infrastructure concepts. infrastructure &amp; ai p17" style="--stripe:#d9bc72">
+ <div class="portfolio-head"><span class="code">P17</span><span class="small-type">INFRASTRUCTURE &amp; AI</span></div>
+ <h3>Genesis Devices / Power / Physical Edge</h3><p>Connected edge devices and physical infrastructure concepts.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Sector Programmes" data-terms="retail operations &amp; client estates retail operations, commerce and client service solutions. sector programmes p18" style="--stripe:#bfaddb">
+ <div class="portfolio-head"><span class="code">P18</span><span class="small-type">SECTOR PROGRAMMES</span></div>
+ <h3>Retail Operations &amp; Client Estates</h3><p>Retail operations, commerce and client service solutions.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Sector Programmes" data-terms="industrial manufacturing &amp; operations manufacturing workflows, production support and industrial systems. sector programmes p19" style="--stripe:#bfaddb">
+ <div class="portfolio-head"><span class="code">P19</span><span class="small-type">SECTOR PROGRAMMES</span></div>
+ <h3>Industrial Manufacturing &amp; Operations</h3><p>Manufacturing workflows, production support and industrial systems.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Sector Programmes" data-terms="property, infrastructure &amp; smart cities property operations and infrastructure intelligence concepts. sector programmes p20" style="--stripe:#bfaddb">
+ <div class="portfolio-head"><span class="code">P20</span><span class="small-type">SECTOR PROGRAMMES</span></div>
+ <h3>Property, Infrastructure &amp; Smart Cities</h3><p>Property operations and infrastructure intelligence concepts.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Sector Programmes" data-terms="workforce commons / contractors / app makers workforce, contractor and developer collaboration services. sector programmes p21" style="--stripe:#bfaddb">
+ <div class="portfolio-head"><span class="code">P21</span><span class="small-type">SECTOR PROGRAMMES</span></div>
+ <h3>Workforce Commons / Contractors / App Makers</h3><p>Workforce, contractor and developer collaboration services.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Sector Programmes" data-terms="research / public intelligence / environment research programmes and source-checked public intelligence. sector programmes p22" style="--stripe:#bfaddb">
+ <div class="portfolio-head"><span class="code">P22</span><span class="small-type">SECTOR PROGRAMMES</span></div>
+ <h3>Research / Public Intelligence / Environment</h3><p>Research programmes and source-checked public intelligence.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article>
+<article class="portfolio" data-family="Delivery &amp; Recruitment" data-terms="collaboration / co-building / go-to-market co-building, partnerships and market-entry support. delivery &amp; recruitment p23" style="--stripe:#e6a7a1">
+ <div class="portfolio-head"><span class="code">P23</span><span class="small-type">DELIVERY &amp; PARTNERSHIPS</span></div>
+ <h3>Collaboration / Co-Building / Go-to-Market</h3><p>Co-building, partnerships and market-entry support.</p><span class="tiny">Product qualification and client rights apply</span>
+ </article></div>
+ <div class="footer"><span><strong>Public-safe projection</strong> · Client-private programmes and source-level records intentionally excluded</span><span>A1 LANDSCAPE · 01 / 02</span></div>
+</section>
+<section class="sheet" id="licensing" aria-label="A1 page two: client licensing model">
+ <div class="kicker">COMMERCIAL DELIVERY MODEL · CONTROLLED CLIENT ACTIVATION</div>
+ <h2 class="second-title">From product discovery<br>to <span style="color:var(--teal)">authorised client estate.</span></h2>
+ <p class="second-lede">A catalogue is not a licence. Every client receives only the products, service limits, environments and capabilities covered by approved agreements and verified technical authority.</p>
+ <div class="arch" id="integrations"><div class="tech"><h3>DigitalMe</h3><p>Principal identity and authenticated access.</p></div><div class="tech"><h3>Genesis</h3><p>Estate, capability and endpoint registration.</p></div><div class="tech"><h3>Warden</h3><p>Permission, admission and policy boundaries.</p></div><div class="tech"><h3>Synnergyze</h3><p>Authorized workflows, orchestration and provisioning.</p></div><div class="tech"><h3>River</h3><p>Execution evidence, receipts and accountability.</p></div></div>
+ <div class="two-col"><section class="box"><h2>Seven-step licence journey</h2><div class="phase-list"><article class="phase"><b>01</b><div><h3>Discover</h3><p>Review publicly approved products and capabilities.</p></div></article><article class="phase"><b>02</b><div><h3>Configure</h3><p>Build a client-specific schedule: scope, users, devices and term.</p></div></article><article class="phase"><b>03</b><div><h3>Verify rights</h3><p>Check component licensing, provider permissions and contractual authority.</p></div></article><article class="phase"><b>04</b><div><h3>Approve</h3><p>Complete commercial approvals, pricing and agreement signatures.</p></div></article><article class="phase"><b>05</b><div><h3>Admit</h3><p>Request Warden authorization for the bounded client estate.</p></div></article><article class="phase"><b>06</b><div><h3>Activate</h3><p>Register with Genesis and orchestrate approved deployment work.</p></div></article><article class="phase"><b>07</b><div><h3>Evidence & renew</h3><p>Maintain River receipts, metering, service assurance and renewals.</p></div></article></div></section><aside><div class="small-box"><h3>Products + connectors + contracts</h3><ul><li>Commercial SKU and approved version</li><li>Client legal entity and Virtual Estate</li><li>Rights and external dependency checks</li><li>Approved user, device and capability quotas</li><li>Provider funding and usage controls</li><li>Release evidence and renewal schedule</li></ul></div><div class="small-box"><h3>Integration opportunities</h3><p>GitHub MCP observability, provider admission, governed automation and support workflows may complement the portfolio where rights and technical verification permit.</p><span class="badge">THIRD-PARTY CAPABILITIES · SEPARATE TERMS</span></div><div class="warning"><h3>Public disclosure boundary</h3><p>No customer identities, internal incident registers, entitlement schedules, source-level IP records, credentials, API addresses or operational configuration are included on this page. A static GitHub Pages site cannot grant licences or securely host private account workflows. Authenticated client actions belong on the separate VSR platform.</p></div></aside></div>
+ <div class="footer"><span><strong>Public presentation only</strong> · Catalogue classification does not imply product availability or entitlement</span><span>A1 LANDSCAPE · 02 / 02</span></div>
+</section>
+</main>
+<script>
+(function(){
+ const field=document.querySelector('#search');const buttons=[...document.querySelectorAll('.filter')];const cards=[...document.querySelectorAll('.portfolio')]; let family='all';
+ function filter(){const s=field.value.trim().toLowerCase();cards.forEach(c=>{c.classList.toggle('hidden', !((family==='all'||family===c.dataset.family)&&(!s||c.dataset.terms.includes(s))))});}
+ buttons.forEach(b=>b.addEventListener('click',()=>{family=b.dataset.filter;buttons.forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});filter()}));field.addEventListener('input',filter);
+ window.addEventListener('beforeprint',()=>{cards.forEach(c=>c.classList.remove('hidden'))});window.addEventListener('afterprint',filter);
+})();
+</script>
+</body></html>
