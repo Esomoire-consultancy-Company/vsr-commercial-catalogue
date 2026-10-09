@@ -3,8 +3,15 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Virtual Silk Road: public-preview catalogue of commercial capability families and client licence architecture. Subject to product-specific qualification.">
-<meta name="robots" content="noindex, nofollow">
-<title>Virtual Silk Road | Commercial Portfolio — Public Preview</title>
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://esomoire-consultancy-company.github.io/vsr-commercial-catalogue/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Virtual Silk Road | Commercial Portfolio">
+<meta property="og:description" content="Explore the VSR capability portfolio and the governed client licensing journey. Product availability and rights remain subject to independent qualification.">
+<meta property="og:url" content="https://esomoire-consultancy-company.github.io/vsr-commercial-catalogue/">
+<meta name="theme-color" content="#152536">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<title>Virtual Silk Road | Commercial Portfolio</title>
 <style>
 :root{--navy:#152536;--muted:#617181;--teal:#087c78;--paper:#f8f8f5;--line:#d9e0e0;--cream:#ecefea;--gold:#c89862}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#dfe6e7;color:var(--navy);font-family:Inter,'Segoe UI',system-ui,Arial,sans-serif;line-height:1.4}
@@ -21,6 +28,10 @@ h1{font-size:clamp(44px,4.5vw,77px);letter-spacing:-.055em;font-weight:750;line-
 .sec-top{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin:14px 0}.sec-top h2{font-size:22px;margin:0;letter-spacing:-.02em}.sec-top .aside{color:#667781;font-size:12px;max-width:530px;text-align:right}
 .tools{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:12px 0 16px}.tools label{display:flex;align-items:center;gap:6px;background:white;border:1px solid #cdd9db;padding:8px 10px;min-width:250px}.tools input{border:0;background:transparent;outline:0;min-width:0;width:100%;font-size:12px}.filter{background:#e7edeb;border:1px solid transparent;padding:8px 11px;font-size:10px;cursor:pointer;color:#51616b;border-radius:2px}.filter.active{background:#174e52;color:#fff}.filter:hover{border-color:#8ba7ac}
 .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.portfolio{position:relative;background:#fff;border:1px solid var(--line);border-top:4px solid var(--stripe);min-height:137px;padding:11px 13px 13px;display:flex;flex-direction:column}.portfolio-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px}.portfolio .code{color:#687583;font-size:11px;font-weight:850}.small-type{font-size:8px;letter-spacing:.065em;color:#7a8592;text-align:right}.portfolio h3{font-size:14px;line-height:1.23;letter-spacing:-.014em;margin:0 0 6px}.portfolio p{color:#60717d;font-size:10px;margin:0 0 8px}.portfolio .tiny{font-size:8px;color:#808d94;margin-top:auto}.portfolio.hidden{display:none}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:21px}.hero-actions a{display:inline-block;text-decoration:none;padding:10px 15px;border-radius:3px;background:#174e52;color:#fff;font-weight:700;font-size:12px}.hero-actions a.secondary{background:transparent;border:1px solid #8fa9a7;color:#174e52}.hero-actions a:hover{background:#0a706b;color:#fff}
+.search-status{font-size:12px;color:#566877;margin:-8px 0 12px}.empty-state{display:none;border:1px dashed #a5b6b7;background:#f1f5f3;padding:18px;font-size:13px;color:#53646c;margin-top:10px}.empty-state.visible{display:block}
+:where(a,button,input):focus-visible{outline:3px solid #087c78;outline-offset:3px}
+:target{scroll-margin-top:110px}
 .footer{margin-top:25px;border-top:1px solid var(--line);padding-top:13px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#708087;font-size:10px}.footer strong{color:#415866}
 .second-title{margin:20px 0 8px;font-size:49px;line-height:1.08;letter-spacing:-.05em}.second-lede{font-size:15px;color:#566777;max-width:1000px;margin-bottom:35px}
 .arch{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:30px}.tech{background:#e7eceb;border:1px solid #cad7d4;border-bottom:4px solid #107976;padding:19px 17px;min-height:115px}.tech h3{font-size:17px;margin:0 0 7px}.tech p{font-size:11px;margin:0;color:#566972}.arrowstrip{text-align:center;color:var(--teal);font-size:15px;letter-spacing:.1em;margin:0 0 12px}
@@ -28,11 +39,11 @@ h1{font-size:clamp(44px,4.5vw,77px);letter-spacing:-.055em;font-weight:750;line-
 .small-box{padding:20px;background:#e8efed;border:1px solid #d1ddd7;margin-bottom:15px}.small-box h3{margin:0 0 10px;font-size:17px}.small-box p{color:#5a6e77;font-size:12px}.small-box ul{padding-left:18px;font-size:12px;color:#526775;line-height:1.8}.badge{display:inline-block;background:#d9eae5;color:#246f67;border:1px solid #96beb6;font-size:10px;font-weight:700;letter-spacing:.03em;padding:5px 9px}
 .warning{border-left:4px solid #b8925d;background:#f6f0e7;padding:17px 19px}.warning h3{margin:0 0 7px;font-size:15px}.warning p{margin:0;font-size:11px;color:#695c4e;line-height:1.65}.layer{background:#132c40;color:white;padding:14px 18px;font-size:13px;font-weight:800;margin:8px 0}.layer-sub{font-size:11px;color:#b8d4dd;font-weight:400}.printnote{font-size:11px;color:#7b898b}
 @media(max-width:1000px){.sheet{padding:26px;width:calc(100% - 22px)}.hero{grid-template-columns:1fr}.hero-right{max-width:none}.cards{grid-template-columns:repeat(2,1fr)}.arch{grid-template-columns:repeat(3,1fr)}.two-col{grid-template-columns:1fr}.top-inner{flex-wrap:wrap}}
-@media(max-width:590px){.topbar .links a{display:none}.sheet{margin:11px auto;padding:19px;min-height:0}.hero{margin-top:10px}.cards{grid-template-columns:1fr}.arch{grid-template-columns:1fr 1fr}.metric{padding:12px 10px;min-height:82px}.metric .val{font-size:28px}h1{font-size:41px}.second-title{font-size:37px}.sec-top{display:block}.sec-top .aside{text-align:left}.filter{font-size:10px}.tools label{min-width:100%;}.footer{display:block}}
+@media(max-width:590px){.top-inner{gap:10px;padding:11px 15px}.topbar .links{width:100%;gap:11px;justify-content:flex-start}.topbar .links a{display:inline-block;font-size:11px}.links button{padding:7px 9px;font-size:11px}.sheet{margin:11px auto;padding:19px;min-height:0}.hero{margin-top:10px}.cards{grid-template-columns:1fr}.arch{grid-template-columns:1fr 1fr}.metric{padding:12px 10px;min-height:82px}.metric .val{font-size:28px}h1{font-size:41px}.second-title{font-size:37px}.sec-top{display:block}.sec-top .aside{text-align:left}.filter{font-size:10px}.tools label{min-width:100%;}.footer{display:block}}
 @media print{
  @page{size:A1 landscape;margin:10mm}
  html,body{background:#fff!important;margin:0!important;padding:0!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
- .topbar,.tools{display:none!important}
+ .topbar,.tools,.hero-actions,.search-status,.empty-state{display:none!important}
  .sheet{box-shadow:none!important;border:0;width:100%!important;min-height:0!important;height:calc(594mm - 20mm);padding:10mm 12mm!important;margin:0!important;break-after:page;page-break-after:always;overflow:hidden!important}
  .sheet:last-child{break-after:auto;page-break-after:auto}
  .cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:3mm}
@@ -52,11 +63,12 @@ h1{font-size:clamp(44px,4.5vw,77px);letter-spacing:-.055em;font-weight:750;line-
 <header class="topbar"><div class="top-inner"><a class="brand" href="#home"><span class="diamond">◇</span> VIRTUAL SILK ROAD</a><nav class="links" aria-label="Site navigation"><a href="#catalogue">Portfolio</a><a href="#licensing">Client licensing</a><a href="#integrations">Integration model</a><button type="button" onclick="window.print()">Print A1</button></nav></div></header>
 <main>
 <section class="sheet" id="home" aria-label="A1 page one: public commercial portfolio">
- <div class="kicker">A PUBLIC CATALOGUE PROPOSAL · VERSION 0.1 · 08 OCT 2026</div>
- <div class="hero"><div><h1>One platform.<br><em>Many capabilities.</em><br>Governed by design.</h1><p class="intro">Explore the Virtual Silk Road commercial portfolio—an integrated approach to identity, estates, orchestration, evidence, infrastructure and sector solutions. Product-specific commercial rights and production readiness are independently qualified.</p></div><div class="hero-right"><b>COMMERCIAL RELEASE POSITION</b><p>This is a non-binding overview of portfolio and service concepts, not a published price list, executable licence, implementation commitment or statement that all products are released.</p><span class="status">PUBLIC PREVIEW · NO ACTIVATION</span></div></div>
+ <div class="kicker">PUBLIC PORTFOLIO EDITION · REVISION 0.2 · 09 OCT 2026</div>
+ <div class="hero"><div><h1>One platform.<br><em>Many capabilities.</em><br>Governed by design.</h1><p class="intro">Explore the Virtual Silk Road commercial portfolio—an integrated approach to identity, estates, orchestration, evidence, infrastructure and sector solutions. Product-specific commercial rights and production readiness are independently qualified.</p><div class="hero-actions"><a href="#catalogue">Explore portfolio ↓</a><a class="secondary" href="#licensing">Understand client licensing →</a></div></div><div class="hero-right"><b>COMMERCIAL RELEASE POSITION</b><p>This is a non-binding overview of portfolio and service concepts, not a published price list, executable licence, implementation commitment or statement that all products are released.</p><span class="status">PUBLIC CATALOGUE · LICENCES BY APPROVAL</span></div></div>
  <div class="metrics"><div class="metric"><div class="val">23</div><small>Portfolio classification headings</small></div><div class="metric"><div class="val">296</div><small>Internal classified topics · not SKUs</small></div><div class="metric"><div class="val">06</div><small>Portfolio families</small></div></div>
  <div class="sec-top" id="catalogue"><h2>Capability and programme portfolio</h2><div class="aside">Find what could be assembled into contracted client solutions. All product descriptions are proposed and subject to release qualification.</div></div>
- <div class="tools" aria-label="Filter portfolio"><label>⌕ <input type="search" id="search" placeholder="Search capability or portfolio ID" autocomplete="off" aria-label="Search portfolio"></label><button class="filter active" data-filter="all" aria-pressed="true">All families</button><button class="filter" data-filter="Institutional Commons" aria-pressed="false">Institutional Commons</button><button class="filter" data-filter="Core Technology" aria-pressed="false">Core Technology</button><button class="filter" data-filter="Market &amp; Media" aria-pressed="false">Market &amp; Media</button><button class="filter" data-filter="Infrastructure &amp; AI" aria-pressed="false">Infrastructure &amp; Ai</button><button class="filter" data-filter="Sector Programmes" aria-pressed="false">Sector Programmes</button><button class="filter" data-filter="Delivery &amp; Recruitment" aria-pressed="false">Delivery &amp; Partnerships</button></div>
+ <div class="tools" aria-label="Filter portfolio"><label>⌕ <input type="search" id="search" placeholder="Search capability or portfolio ID" autocomplete="off" aria-label="Search portfolio"></label><button class="filter active" data-filter="all" aria-pressed="true">All families</button><button class="filter" data-filter="Institutional Commons" aria-pressed="false">Institutional Commons</button><button class="filter" data-filter="Core Technology" aria-pressed="false">Core Technology</button><button class="filter" data-filter="Market &amp; Media" aria-pressed="false">Market &amp; Media</button><button class="filter" data-filter="Infrastructure &amp; AI" aria-pressed="false">Infrastructure &amp; AI</button><button class="filter" data-filter="Sector Programmes" aria-pressed="false">Sector Programmes</button><button class="filter" data-filter="Delivery &amp; Partnerships" aria-pressed="false">Delivery &amp; Partnerships</button></div>
+ <p class="search-status" id="results-status" role="status" aria-live="polite">Showing all 23 portfolio classifications</p>
  <div class="cards" id="cards"><article class="portfolio" data-family="Institutional Commons" data-terms="believers common / commonwealth community organization, participation and institutional programmes. institutional commons p01" style="--stripe:#c99d78">
  <div class="portfolio-head"><span class="code">P01</span><span class="small-type">INSTITUTIONAL COMMONS</span></div>
  <h3>Believers Common / Commonwealth</h3><p>Community organization, participation and institutional programmes.</p><span class="tiny">Product qualification and client rights apply</span>
@@ -145,10 +157,10 @@ h1{font-size:clamp(44px,4.5vw,77px);letter-spacing:-.055em;font-weight:750;line-
  <div class="portfolio-head"><span class="code">P22</span><span class="small-type">SECTOR PROGRAMMES</span></div>
  <h3>Research / Public Intelligence / Environment</h3><p>Research programmes and source-checked public intelligence.</p><span class="tiny">Product qualification and client rights apply</span>
  </article>
-<article class="portfolio" data-family="Delivery &amp; Recruitment" data-terms="collaboration / co-building / go-to-market co-building, partnerships and market-entry support. delivery &amp; recruitment p23" style="--stripe:#e6a7a1">
+<article class="portfolio" data-family="Delivery &amp; Partnerships" data-terms="collaboration / co-building / go-to-market co-building, partnerships and market-entry support. delivery &amp; partnerships p23" style="--stripe:#e6a7a1">
  <div class="portfolio-head"><span class="code">P23</span><span class="small-type">DELIVERY &amp; PARTNERSHIPS</span></div>
  <h3>Collaboration / Co-Building / Go-to-Market</h3><p>Co-building, partnerships and market-entry support.</p><span class="tiny">Product qualification and client rights apply</span>
- </article></div>
+ </article></div><div class="empty-state" id="empty-state">No matching portfolio headings. Try a different search term or select “All families”.</div>
  <div class="footer"><span><strong>Public-safe projection</strong> · Client-private programmes and source-level records intentionally excluded</span><span>A1 LANDSCAPE · 01 / 02</span></div>
 </section>
 <section class="sheet" id="licensing" aria-label="A1 page two: client licensing model">
@@ -163,9 +175,9 @@ h1{font-size:clamp(44px,4.5vw,77px);letter-spacing:-.055em;font-weight:750;line-
 <script>
 (function(){
  const field=document.querySelector('#search');const buttons=[...document.querySelectorAll('.filter')];const cards=[...document.querySelectorAll('.portfolio')]; let family='all';
- function filter(){const s=field.value.trim().toLowerCase();cards.forEach(c=>{c.classList.toggle('hidden', !((family==='all'||family===c.dataset.family)&&(!s||c.dataset.terms.includes(s))))});}
+ function filter(){const s=field.value.trim().toLowerCase();let visible=0;cards.forEach(c=>{const show=(family==='all'||family===c.dataset.family)&&(!s||c.dataset.terms.includes(s));c.classList.toggle('hidden', !show);if(show)visible++;});document.querySelector('#results-status').textContent=`Showing ${visible} of ${cards.length} portfolio classifications`;document.querySelector('#empty-state').classList.toggle('visible',visible===0);}
  buttons.forEach(b=>b.addEventListener('click',()=>{family=b.dataset.filter;buttons.forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});filter()}));field.addEventListener('input',filter);
- window.addEventListener('beforeprint',()=>{cards.forEach(c=>c.classList.remove('hidden'))});window.addEventListener('afterprint',filter);
+ filter();window.addEventListener('beforeprint',()=>{cards.forEach(c=>c.classList.remove('hidden'))});window.addEventListener('afterprint',filter);
 })();
 </script>
 </body></html>
